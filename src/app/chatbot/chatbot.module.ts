@@ -14,20 +14,24 @@ import { RolePageComponent } from './pages/role-page/role-page.component';
 import { UserPageComponent } from './pages/user-page/user-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
-import { MessageCardComponent } from './components/message-card/message-card.component';
+import { HomeRemindersComponent } from './components/components-home/home-reminders/home-reminders.component';
+import { HomePostsComponent } from './components/components-home/home-posts/home-posts.component';
+import { MessageCardComponent } from './components/components-message/message-card/message-card.component';
 
 @NgModule({
   declarations: [
     CategoryPageComponent,
+    DashboardPageComponent,
     HomePageComponent,
+    HomePostsComponent,
+    HomeRemindersComponent,
     LayoutPageComponent,
+    MessageCardComponent,
     MessagePageComponent,
     PostPageComponent,
     ReminderPageComponent,
     RolePageComponent,
     UserPageComponent,
-    DashboardPageComponent,
-    MessageCardComponent,
   ],
   imports:[
     ChatBotRoutingModule,
