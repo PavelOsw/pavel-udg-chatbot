@@ -10,12 +10,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
-import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
-
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardPageComponent,
   ],
   imports: [
     AppRoutingModule,
