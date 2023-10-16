@@ -1,20 +1,22 @@
 <mat-card class="col card message-card m-2">
 
   <mat-card-header class="mb-2">
-      <div class="flex align-items-center flex-wrap card-container">
-        <img src="assets/no-image-icon.png" alt="Avatar" class="avatar">
-        <strong class="ml-3 username">Username</strong>
-        <a class="ml-5 email">email</a>
-      </div>
-      <div class="spacer flex justify-content-end flex-wrap card-container">
-        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu" xPosition="before">
-          <button mat-menu-item>Archivar</button>
-          <button mat-menu-item>Eliminar</button>
-        </mat-menu>
-      </div>
+    <div class="flex align-items-center justify-content-start flex-wrap card-container">
+    <img
+      mat-card-avatar
+      src="https://icon-library.com/images/no-user-image-icon/no-user-image-icon-27.jpg"
+      class="img-thumbnail rounded mr-2 mt-2">
+    <mat-card-title><strong class="ml-3 username">Username</strong></mat-card-title>
+    </div>
+    <div class="spacer flex align-items-center justify-content-end flex-wrap card-container">
+      <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" xPosition="before">
+        <button mat-menu-item>Archivar</button>
+        <button mat-menu-item>Eliminar</button>
+      </mat-menu>
+    </div>
   </mat-card-header>
 
   <mat-card-content class="message-card-content">
